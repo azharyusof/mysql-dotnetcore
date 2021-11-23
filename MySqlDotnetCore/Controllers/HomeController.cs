@@ -20,6 +20,8 @@ namespace MySqlDotnetCore.Controllers
 
         public IActionResult Index()
         {
+            TestError error = new TestError();
+        
             return View();
         }
 
