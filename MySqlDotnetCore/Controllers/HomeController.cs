@@ -20,6 +20,8 @@ namespace MySqlDotnetCore.Controllers
 
         public IActionResult Index()
         {
+            string azhar = "testing";
+        
             return View();
         }
 
