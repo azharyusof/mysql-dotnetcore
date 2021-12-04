@@ -5,12 +5,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MySqlDotnetCore.Context;
 using MySqlDotnetCore.Models;
 
 namespace MySqlDotnetCore.Controllers
 {
     public class HomeController : Controller
     {
+        readonly StaffDBContext staffDBContext = new StaffDBContext();
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -20,7 +23,9 @@ namespace MySqlDotnetCore.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<StaffInfo> StaffInfoList = staffDBContext.GetStaffInfo().ToList();
+
+            return View(StaffInfoList);
         }
 
         public IActionResult Privacy()
