@@ -1,6 +1,6 @@
 ﻿namespace MySqlDotnetCore.Connection
 {
-    public class SQLConnection
+    public class DBConnection
     {
         public Models.Connection GetConnection()
         {

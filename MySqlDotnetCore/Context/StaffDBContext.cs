@@ -8,7 +8,7 @@ namespace MySqlDotnetCore.Context
 {
     public class StaffDBContext
     {
-        readonly SQLConnection mssql = new SQLConnection();
+        readonly DBConnection mssql = new DBConnection();
 
         #region GRIDVIEW
         public IEnumerable<StaffInfo> GetStaffInfo()
