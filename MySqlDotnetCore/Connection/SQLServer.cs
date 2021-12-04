@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MySqlDotnetCore.Connection
 {
-    public class SQLServer
+    public class SQLConnection
     {
         public Models.Connection GetConnection()
         {
