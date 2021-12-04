@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: dotnet
-        image:  hpranchernode1.uemedgenta.com:30008/uem/netcoreapptest2:20
+        image:  hpranchernode1.uemedgenta.com:30008/uem/netcoreapptest2:21
         imagePullPolicy: Always
         ports:
         - containerPort: 80
